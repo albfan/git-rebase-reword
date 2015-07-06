@@ -1,6 +1,6 @@
 # git-rebase-reword
 
-git-rebase-reword is a simple git command to change one commit last or older the same way as you ammend
+git-rebase-reword is a simple git command to change one commit (last or older) the same way as you ammend
 
 ##Install
 
@@ -17,6 +17,6 @@ $ ln -s $PWD/reword_editor ~/bin/
 
 ```bash
 $ cd <repo>
-$ git rebase-reword <commit>
+$ git rebase-reword <commit|symbolic-ref>
 ```
 

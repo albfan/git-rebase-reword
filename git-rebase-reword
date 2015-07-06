@@ -1,6 +1,6 @@
 export GIT_SEQUENCE_EDITOR=reword_editor
-export REWORD_COMMIT=$1
-git rebase -i "$1^"
+export REWORD_COMMIT="$(git rev-parse --short $1)"
+git rebase -i "${REWORD_COMMIT}^"
 export GIT_SEQUENCE_EDITOR=
 export REWORD_COMMIT=
 
