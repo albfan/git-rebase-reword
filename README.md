@@ -23,3 +23,13 @@ $ cd <repo>
 $ git rebase-reword <commit|symbolic-ref>
 ```
 
+## Examples
+
+```bash
+# reword a commit
+$ git rebase-reword b68f560
+# reword a reference
+$ git rebase-reword HEAD^
+# reword last commit
+$ git rebase-reword
+```
